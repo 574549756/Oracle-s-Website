@@ -46,6 +46,7 @@ import sideBar from './components/sideBar'
         height: 800px;
         background: rgb(30, 30, 30);
         display: flex;
+        box-shadow: 0 0 30px 3px rgba($color: #000000, $alpha: 0.3);
     }
 }
 </style>

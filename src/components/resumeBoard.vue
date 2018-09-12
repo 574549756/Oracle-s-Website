@@ -14,7 +14,7 @@
                 <li>专业</li>
                 <li>学校</li>
             </ul>
-            <ul class="msg">
+            <ul>
                 <li>1994.2.25</li>
                 <li>24</li>
                 <li>重庆</li>
@@ -36,11 +36,28 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    padding: 40px;
     .photo {
         height: 70px;
         width: 70px;
         border-radius: 35px;
         background: red;
+    }
+    .Id {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            li {
+                font-size: 15px;
+            }
+        }
     }
 }
 </style>
