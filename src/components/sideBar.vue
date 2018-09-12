@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="topbar">
         <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-gerenlogoBold"></use>
         </svg>
@@ -13,7 +13,14 @@
 </script>
 
 <style lang="scss">
-div {
-    margin: 2px;
+.topbar {
+    height: 800px;
+    width: 60px;
+    background: gray;
+    svg {
+        width: 50px;
+        height: 50px;
+        fill: white;
+    }
 }
 </style>

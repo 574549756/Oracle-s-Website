@@ -1,22 +1,28 @@
 <template>
   <div id="app">
     <div class="container">
-      <topbar/>
+      <sideBar/>
+      <main>
+        <resumeBoard/>
+        <div class="detail"></div>  
+      </main>
     </div>
   </div>
 </template>
 
 <script>
-import topbar from './components/topbar'
+import resumeBoard from './components/resumeBoard'
+import sideBar from './components/sideBar'
   export default {
     name: 'App',
     components:{
-      topbar
+      sideBar,
+      resumeBoard
     }
   }
 </script>
 
-<style>
+<style lang="scss">
 .icon {
     width: 1em;
     height: 1em;
@@ -24,13 +30,22 @@ import topbar from './components/topbar'
     fill: currentColor;
     overflow: hidden;
 }
-
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        width: 1330px;
+        height: 800px;
+        background: rgb(30, 30, 30);
+        display: flex;
+    }
 }
 </style>

@@ -7,6 +7,8 @@ import 'normalize.css'
 import './assets/reset.scss'
 
 Vue.config.productionTip = false
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts
 
 /* eslint-disable no-new */
 new Vue({
