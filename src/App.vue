@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container">
-      <sideBar/>
+      <topBar/>
       <main>
         <resumeBoard/>
         <div class="detail"></div>  
@@ -12,11 +12,11 @@
 
 <script>
 import resumeBoard from './components/resumeBoard'
-import sideBar from './components/sideBar'
+import topBar from './components/topBar'
   export default {
     name: 'App',
     components:{
-      sideBar,
+      topBar,
       resumeBoard
     }
   }
@@ -30,23 +30,26 @@ import sideBar from './components/sideBar'
     fill: currentColor;
     overflow: hidden;
 }
+p {
+    color: #d2cfce;
+    font-weight: 600;
+}
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
-    height: 100vh;
+    background-color: #3b3b3b;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     .container {
-        width: 1330px;
-        height: 800px;
-        background: rgb(30, 30, 30);
+        width: 76vw;
         display: flex;
-        box-shadow: 0 0 30px 3px rgba($color: #000000, $alpha: 0.3);
+        background-color: #3b3b3b;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 </style>
