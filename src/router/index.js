@@ -13,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "HelloWorld",
-      component: app
+      name: "normal",
+      component: undefined
     },
     {
       path: "/about",

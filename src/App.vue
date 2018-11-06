@@ -27,7 +27,7 @@ export default {
 <style lang="scss">
 $designWidth: 1920;
 @function px($px) {
-	@return $px/$designWidth * 100 + rem;
+	@return $px/$designWidth * 10 + rem;
 }
 
 .icon {
