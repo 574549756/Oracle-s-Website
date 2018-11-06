@@ -8,16 +8,28 @@
 
 <script>
 import resumeBoard from "./components/resumeBoard"
+import router from "./router/index"
 import topBar from "./components/topBar"
+import store from "./store/index"
+
+let pageWidth = window.innerWidth
+styleTag.innerHTML = "html{font-size:" + pageWidth / 10 + "px;}"
+
 export default {
 	name: "App",
 	components: {
 		resumeBoard
-	}
+	},
+	store
 }
 </script>
 
 <style lang="scss">
+$designWidth: 1920;
+@function px($px) {
+	@return $px/$designWidth * 100 + rem;
+}
+
 .icon {
 	width: 1em;
 	height: 1em;
@@ -35,6 +47,8 @@ p {
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	background: url("./assets/Rose2kTiny.jpg") no-repeat center;
+	background-size: cover;
+
 	width: 100vw;
 	height: 100vh;
 	display: flex;
