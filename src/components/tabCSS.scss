@@ -51,7 +51,7 @@ $designWidth: 1920;
         &:hover {
           > .Tab-inner {
             > h1 {
-              margin-top: 70px;
+              margin-top: 100px;
             }
           }
         }
@@ -68,7 +68,8 @@ $designWidth: 1920;
             font-weight: 100;
           }
           h1 {
-            margin-top: 50px;
+            transition: all 0.3s;
+            margin-top: 80px;
             font-size: 16px;
             color: rgb(235, 235, 235);
             font-weight: 200;
