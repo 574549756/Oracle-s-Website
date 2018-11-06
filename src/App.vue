@@ -12,6 +12,9 @@ import router from "./router/index"
 import topBar from "./components/topBar"
 import store from "./store/index"
 
+let pageWidth = window.innerWidth
+styleTag.innerHTML = "html{font-size:" + pageWidth / 10 + "px;}"
+
 export default {
 	name: "App",
 	components: {

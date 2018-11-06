@@ -32,7 +32,7 @@
         <router-link to="/blog" class="clickable">
           <div class="Tab-inner">
             <h2>03</h2>
-            <h1>Blog</h1>
+            <h1>My Blog</h1>
           </div>
         </router-link>
         <router-view class="router"></router-view>
@@ -83,6 +83,7 @@ $designWidth: 1920;
 		height: 100vh;
 		width: 100vw;
 		display: flex;
+		transition: all 0.3;
 		section {
 			width: 75px;
 			height: 100vh;
@@ -108,7 +109,7 @@ $designWidth: 1920;
 					h1 {
 						margin-top: 50px;
 						font-size: 16px;
-						color: white;
+						color: rgb(235, 235, 235);
 						font-weight: 200;
 						writing-mode: vertical-rl;
 						transform: rotate(180deg);
@@ -153,10 +154,13 @@ $designWidth: 1920;
 						align-items: center;
 						margin-bottom: 100px;
 						h2 {
+							transition: all 0.3s;
 							color: rgb(121, 121, 121);
 							font-size: 13px;
 						}
 						h1 {
+							transition: all 0.3s;
+							margin-top: 20px;
 							font-size: 18px;
 							writing-mode: horizontal-tb;
 							transform: none;
@@ -167,6 +171,17 @@ $designWidth: 1920;
 					background: rgba(10, 5, 0, 0.3);
 					z-index: 2;
 					box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.8);
+					a.clickable {
+						.Tab-inner {
+							h2 {
+								transform: translateX(px(30));
+							}
+							h1 {
+								color: white;
+								transform: translateY(px(-80));
+							}
+						}
+					}
 				}
 			}
 			.router {
