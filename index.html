@@ -5,12 +5,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Oracle Zone</title>
-  <script src="//at.alicdn.com/t/font_801219_qrbvhe0shq.js"></script>
-  <link id="styleTag" rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+
+  <style id=" styleTag" rel="stylesheet" href="style.css"></style>
+  <style type="text/css">
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+  </style>
+  <script src="//at.alicdn.com/t/font_801219_w0oqhsxymj.js"></script>
 </head>
 
 <body>
   <div id="app"></div>
+  <script>
+    let pageWidth = window.innerWidth
+    styleTag.innerHTML = "html{font-size:" + pageWidth / 10 + "px;}"
+  </script>
 </body>
 
 </html>

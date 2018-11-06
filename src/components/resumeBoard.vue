@@ -2,7 +2,7 @@
   <div class="nameBoard">
     <main v-bind:class="{normal:selectTab.normal}">
       <section v-bind:class="{active:selectTab.about}" v-on:click="switchTab()">
-        <router-link to="/about" class="about">
+        <router-link to="/about" class="clickable">
           <div class="Tab-inner">
             <h2>00</h2>
             <h1>About Me</h1>
@@ -11,16 +11,16 @@
         <router-view class="router"></router-view>
       </section>
       <section v-bind:class="{active:selectTab.ability}" v-on:click="switchTab()">
-        <router-link to="/ability" class="ability">
+        <router-link to="/ability" class="clickable">
           <div class="Tab-inner">
             <h2>01</h2>
-            <h1>Ability</h1>
+            <h1>Skills</h1>
           </div>
         </router-link>
         <router-view class="router"></router-view>
       </section>
       <section v-bind:class="{active:selectTab.project}" v-on:click="switchTab()">
-        <router-link to="/project" class="project">
+        <router-link to="/project" class="clickable">
           <div class="Tab-inner">
             <h2>02</h2>
             <h1>Portfolio</h1>
@@ -29,7 +29,7 @@
         <router-view class="router"></router-view>
       </section>
       <section v-bind:class="{active:selectTab.blog}" v-on:click="switchTab()">
-        <router-link to="/blog" class="blog">
+        <router-link to="/blog" class="clickable">
           <div class="Tab-inner">
             <h2>03</h2>
             <h1>Blog</h1>
@@ -86,12 +86,12 @@ $designWidth: 1920;
 		section {
 			width: 75px;
 			height: 100vh;
-			background: rgba(10, 5, 0, 0.5);
+			background: rgba(80, 45, 12, 0.1);
 			border-left: 0.5px solid rgba(100, 100, 100, 0.3);
 			border-right: 0.5px solid rgba(100, 100, 100, 0.3);
 			transition: all 0.3s;
 			display: flex;
-			a {
+			a.clickable {
 				width: 75px;
 				height: 100vh;
 				.Tab-inner {
@@ -116,17 +116,18 @@ $designWidth: 1920;
 				}
 			}
 			.router {
-				background: black;
+				background: rgba(34, 32, 32, 1);
 				display: none;
 			}
 			&.active {
 				width: 100%;
 				height: 100vh;
-				a {
+				a.clickable {
 					display: none;
 				}
 				.router {
 					display: block;
+					width: 100%;
 				}
 			}
 		}
@@ -139,7 +140,7 @@ $designWidth: 1920;
 				border-right: 0.5px solid rgba(100, 100, 100, 0.3);
 				transition: all 0.3s;
 				display: flex;
-				a {
+				a.clickable {
 					width: 25vw;
 					height: 100vh;
 					display: flex;

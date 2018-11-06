@@ -1,10 +1,10 @@
 import Vue from "vue"
 import Router from "vue-router"
 import app from "../App"
-import about from "../components/about"
-import project from "../components/project"
-import blog from "../components/blog"
-import ability from "../components/ability"
+import about from "../components/selectTabContent/about"
+import project from "../components/selectTabContent/project"
+import blog from "../components/selectTabContent/blog"
+import ability from "../components/selectTabContent/ability"
 import store from "../store/index"
 
 Vue.use(Router)
