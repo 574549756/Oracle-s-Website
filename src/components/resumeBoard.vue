@@ -70,6 +70,28 @@ $designWidth: 1920;
 @function px($px) {
 	@return $px/$designWidth * 10 + rem;
 }
+@keyframes slidein {
+	0% {
+		transform: translateY(-200px);
+	}
+	40% {
+		transform: translateY(-200px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .nameBoard {
 	height: 100vh;
 	width: 100vw;
@@ -83,7 +105,6 @@ $designWidth: 1920;
 		height: 100vh;
 		width: 100vw;
 		display: flex;
-		transition: all 0.3;
 		section {
 			width: 75px;
 			height: 100vh;
@@ -95,12 +116,20 @@ $designWidth: 1920;
 			a.clickable {
 				width: 75px;
 				height: 100vh;
+				&:hover {
+					> .Tab-inner {
+						> h1 {
+							margin-top: 70px;
+						}
+					}
+				}
 				.Tab-inner {
 					display: flex;
 					flex-direction: column;
 					justify-content: flex-start;
 					align-items: center;
 					margin-top: 50px;
+					animation: 0.6s fadein;
 					h2 {
 						color: rgb(184, 184, 184);
 						font-size: 13px;
@@ -111,8 +140,7 @@ $designWidth: 1920;
 						font-size: 16px;
 						color: rgb(235, 235, 235);
 						font-weight: 200;
-						writing-mode: vertical-rl;
-						transform: rotate(180deg);
+						transform: rotate(-90deg);
 					}
 				}
 			}
@@ -139,7 +167,6 @@ $designWidth: 1920;
 				background: rgba(10, 5, 0, 0.5);
 				border-left: 0.5px solid rgba(100, 100, 100, 0.3);
 				border-right: 0.5px solid rgba(100, 100, 100, 0.3);
-				transition: all 0.3s;
 				display: flex;
 				a.clickable {
 					width: 25vw;
@@ -153,6 +180,7 @@ $designWidth: 1920;
 						justify-content: flex-end;
 						align-items: center;
 						margin-bottom: 100px;
+						animation: 0.6s fadein;
 						h2 {
 							transition: all 0.3s;
 							color: rgb(121, 121, 121);
@@ -173,6 +201,7 @@ $designWidth: 1920;
 					box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.8);
 					a.clickable {
 						.Tab-inner {
+							animation: 0.6s fadein;
 							h2 {
 								transform: translateX(px(30));
 							}

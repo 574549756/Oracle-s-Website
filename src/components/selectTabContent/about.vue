@@ -22,61 +22,7 @@
   </div>
 </template>
 
-<style lang="scss">
-.router {
-	position: relative;
-	.clickBox {
-		position: absolute;
-		right: 50px;
-		top: 50px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-end;
-		a.cross {
-			margin: 0 5px 40px 0;
-			display: block;
-			svg {
-				fill: #b1b0b0;
-				height: 20px;
-				width: 20px;
-			}
-		}
-		.preAndNext {
-			display: flex;
-			div.pre {
-				svg {
-					height: 25px;
-					width: 25px;
-					fill: #4a4848;
-					transform: rotate(180deg);
-				}
-			}
-			a.pre {
-				svg {
-					height: 25px;
-					width: 25px;
-					fill: #b1b0b0;
-					transform: rotate(180deg);
-				}
-			}
-			a.next {
-				svg {
-					margin-left: 20px;
-					height: 25px;
-					width: 25px;
-					fill: #b1b0b0;
-				}
-			}
-			div.next {
-				svg {
-					margin-left: 20px;
-					height: 25px;
-					width: 25px;
-					fill: #4a4848;
-				}
-			}
-		}
-	}
-}
-</style>
+<script>
+import clickBox from "./clickBox.scss"
+export default {}
+</script>
