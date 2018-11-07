@@ -1,5 +1,9 @@
 <template>
   <div>
+    <div class="Tab-inner-unfold">
+      <h2>01</h2>
+      <h1>Skills</h1>
+    </div>
     <div class="clickBox">
       <router-link to="/" class="cross">
         <svg class="icon" aria-hidden="true">
@@ -19,6 +23,7 @@
         </router-link>
       </div>
     </div>
+    <main></main>
   </div>
 </template>
 

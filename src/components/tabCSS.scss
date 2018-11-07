@@ -31,7 +31,7 @@ $designWidth: 1920;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  main {
+  main.nameBoard-container {
     background: url("../assets/Rose2kTiny.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
@@ -51,7 +51,7 @@ $designWidth: 1920;
         &:hover {
           > .Tab-inner {
             > h1 {
-              margin-top: 100px;
+              margin-top: 80px;
             }
           }
         }
@@ -68,12 +68,13 @@ $designWidth: 1920;
             font-weight: 100;
           }
           h1 {
+            writing-mode: vertical-lr;
             transition: all 0.3s;
-            margin-top: 80px;
+            margin-top: 60px;
             font-size: 16px;
             color: rgb(235, 235, 235);
             font-weight: 200;
-            transform: rotate(-90deg);
+            transform: rotate(180deg);
           }
         }
         .Board-inner {
@@ -91,7 +92,7 @@ $designWidth: 1920;
           display: none;
         }
         .router {
-          display: block;
+          display: flex;
           width: 100%;
         }
       }
@@ -143,11 +144,11 @@ $designWidth: 1920;
             .Board-inner {
               animation: 0.6s fadein;
               h2 {
-                transform: translateX(px(30));
+                transform: translateX(30px);
               }
               h1 {
                 color: white;
-                transform: translateY(px(-80));
+                transform: translateY(-80px);
               }
             }
           }

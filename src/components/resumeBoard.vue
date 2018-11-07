@@ -1,6 +1,6 @@
 <template>
   <div class="nameBoard">
-    <main v-bind:class="{normal:selectTab.normal}">
+    <main v-bind:class="{normal:selectTab.normal}" class="nameBoard-container">
       <section v-bind:class="{active:selectTab.about}" v-on:click="switchTab()">
         <router-link to="/about" class="clickable">
           <div class="Tab-inner">
@@ -70,7 +70,6 @@ export default {
 			for (let i in this.selectTab) {
 				this.selectTab[i] = false
 			}
-			console.log(this.$router)
 			this.selectTab[this.$route.name] = true
 		}
 	},
