@@ -23,17 +23,24 @@
         </router-link>
       </div>
     </div>
-    <main class="inner-container"></main>
+    <main class="inner-container">
+      <aboutMe/>
+    </main>
   </div>
 </template>
 
 <script>
+import aboutMe from "../TabContent/aboutMe"
 import clickBox from "./clickBox.scss"
-export default {}
+export default {
+	components: {
+		aboutMe
+	}
+}
 </script>
 
 <style lang="scss">
-$designWidth: 1920;
+$designWidth: 800;
 @function px($px) {
 	@return $px/$designWidth * 10 + rem;
 }
@@ -43,10 +50,42 @@ $designWidth: 1920;
 	align-items: center;
 	main.inner-container {
 		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
 		flex: 1;
-		margin: 0 140px;
 		height: 100%;
 		border: 1px solid red;
+		div.aboutMe-Container {
+			flex: 1;
+			margin: 120px 120px 0 120px;
+			border: 1px solid green;
+			width: 850px;
+			color: rgb(255, 255, 255);
+			display: flex;
+			height: 100%;
+			flex-direction: column;
+
+			header.aboutMe-header {
+				display: flex;
+				height: 40%;
+				div.photo {
+					display: block;
+					width: 50%;
+					height: 100%;
+					background: rgb(80, 80, 80);
+				}
+				div.aboutMe-header-text {
+					display: flex;
+				}
+			}
+			main.aboutMe-main-container {
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				border: 1px solid yellow;
+			}
+		}
 	}
 }
 </style>
