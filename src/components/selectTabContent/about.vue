@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style lang="scss">
-$designWidth: 800;
+$designWidth: 1920;
 @function px($px) {
 	@return $px/$designWidth * 10 + rem;
 }
@@ -48,6 +48,7 @@ $designWidth: 800;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0 100px;
 	main.inner-container {
 		display: flex;
 		justify-content: flex-start;
@@ -60,23 +61,33 @@ $designWidth: 800;
 			flex: 1;
 			margin: 120px 120px 0 120px;
 			border: 1px solid green;
-			width: 850px;
 			color: rgb(255, 255, 255);
 			display: flex;
-			height: 100%;
+			width: 100%;
 			flex-direction: column;
-
+			height: 100%;
 			header.aboutMe-header {
 				display: flex;
 				height: 40%;
-				div.photo {
-					display: block;
-					width: 50%;
-					height: 100%;
-					background: rgb(80, 80, 80);
-				}
+				background: gray;
 				div.aboutMe-header-text {
 					display: flex;
+					flex-direction: column;
+					div.aboutMe-header-h3 {
+						display: flex;
+						font-size: 30px;
+						h3 {
+							font-weight: 200;
+						}
+					}
+					h1 {
+						font-size: 50px;
+						font-weight: 100;
+					}
+					h2 {
+						font-size: 30px;
+						font-weight: 100;
+					}
 				}
 			}
 			main.aboutMe-main-container {

@@ -1,9 +1,11 @@
 <template>
   <div class="aboutMe-Container">
     <header class="aboutMe-header">
-      <div class="photo"></div>
       <div class="aboutMe-header-text">
-        <p>我是</p>
+        <div class="aboutMe-header-h3">
+          <h3>你好,</h3>
+          <h3>我是</h3>
+        </div>
         <h1>张博涵</h1>
         <h2>前端工程师</h2>
       </div>
