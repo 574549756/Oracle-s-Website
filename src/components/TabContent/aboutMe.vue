@@ -2,12 +2,16 @@
   <div class="aboutMe-Container">
     <header class="aboutMe-header">
       <div class="aboutMe-header-text">
-        <div class="aboutMe-header-h3">
-          <h3>你好,</h3>
-          <h3>我是</h3>
+        <div class="logo">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-gerenlogoBold"></use>
+          </svg>
+          <p>ex.arc.zhang@gmail.com</p>
         </div>
-        <h1>张博涵</h1>
-        <h2>前端工程师</h2>
+        <div class="aboutMe-header-h1">
+          <h1>张博涵</h1>
+          <h2>前端工程师</h2>
+        </div>
       </div>
     </header>
     <main class="aboutMe-main-container">

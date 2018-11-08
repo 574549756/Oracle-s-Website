@@ -56,37 +56,50 @@ $designWidth: 1920;
 		flex-direction: column;
 		flex: 1;
 		height: 100%;
-		border: 1px solid red;
 		div.aboutMe-Container {
-			flex: 1;
 			margin: 120px 120px 0 120px;
-			border: 1px solid green;
+
 			color: rgb(255, 255, 255);
 			display: flex;
-			width: 100%;
+			width: 900px;
 			flex-direction: column;
 			height: 100%;
 			header.aboutMe-header {
 				display: flex;
-				height: 40%;
-				background: gray;
+				height: 35%;
+				position: relative;
 				div.aboutMe-header-text {
 					display: flex;
 					flex-direction: column;
-					div.aboutMe-header-h3 {
+					flex: 1;
+					.logo {
 						display: flex;
-						font-size: 30px;
-						h3 {
-							font-weight: 200;
+						align-items: flex-end;
+						justify-content: space-between;
+						svg {
+							fill: rgb(141, 141, 141);
+							height: 40px;
+							width: 40px;
 						}
 					}
-					h1 {
-						font-size: 50px;
-						font-weight: 100;
-					}
-					h2 {
-						font-size: 30px;
-						font-weight: 100;
+					div.aboutMe-header-h1 {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						display: flex;
+						width: 70%;
+						padding: 20px 0;
+						align-items: flex-end;
+						background: #a3121979;
+						h1 {
+							margin: 0 10px 0 0;
+							font-size: 50px;
+							font-weight: 100;
+						}
+						h2 {
+							font-size: 30px;
+							font-weight: 100;
+						}
 					}
 				}
 			}
@@ -94,7 +107,6 @@ $designWidth: 1920;
 				display: flex;
 				justify-content: center;
 				align-items: flex-start;
-				border: 1px solid yellow;
 			}
 		}
 	}
