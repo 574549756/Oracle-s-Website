@@ -32,7 +32,8 @@
 import skills from "../TabContent/skills"
 export default {
 	components: {
-		skills
+		skills,
+		
 	}
 }
 </script>
@@ -56,6 +57,7 @@ export default {
 			color: rgb(255, 255, 255);
 			display: flex;
 			width: 900px;
+			height: 1000px;
 			flex-direction: column;
 			.row1 {
 				width: 100%;
