@@ -86,6 +86,7 @@ $designWidth: 1920;
 						}
 					}
 					div.aboutMe-board {
+						margin-top: 50px;
 						display: flex;
 						justify-content: flex-start;
 						flex: 1;
@@ -94,34 +95,67 @@ $designWidth: 1920;
 							height: 100%;
 							background: white;
 						}
-						> .aboutMe-message {
-							margin-top: 50px;
-							margin-left: 50px;
+						.row-right {
 							display: flex;
-							h1 {
-								margin: 0;
-								font-family: "Courier New", Courier,
-									monospace;
-								font-weight: 100;
-								font-size: 50px;
-							}
-							h2 {
-								font-weight: 100;
-								font-size: 24px;
-								color: rgb(175, 175, 175);
-							}
-							.aboutMe-message-title2-site {
+							flex-direction: column;
+							flex: 1;
+							justify-content: flex-start;
+							align-items: flex-start;
+							padding: 50px 0 0 50px;
+							main.aboutMe-main-container {
+								width: 100%;
+								margin-top: 30px;
 								display: flex;
 								justify-content: flex-start;
 								align-items: center;
-								svg {
-									fill: rgb(112, 112, 112);
-									height: 20px;
-									width: 20px;
+								.row-1 {
+									display: flex;
+									justify-content: space-between;
+									div {
+										display: flex;
+										flex-direction: column;
+										justify-content: flex-start;
+										align-items: flex-start;
+										font-size: 18px;
+										p {
+											margin-bottom: 5px;
+										}
+									}
+									.messageTitle {
+										margin-right: 80px;
+										p {
+											color: rgb(112, 112, 112);
+										}
+									}
 								}
-								p {
-									color: rgb(112, 112, 112);
-									font-size: 15px;
+							}
+							> .aboutMe-message {
+								display: flex;
+								h1 {
+									margin: 0;
+									font-family: "Courier New",
+										Courier, monospace;
+									font-weight: 100;
+									font-size: 50px;
+								}
+								h2 {
+									font-weight: 100;
+									font-size: 24px;
+									color: rgb(175, 175, 175);
+								}
+								.aboutMe-message-title2-site {
+									display: flex;
+									justify-content: flex-start;
+									align-items: center;
+									svg {
+										fill: rgb(112, 112, 112);
+										height: 20px;
+										width: 20px;
+									}
+									p {
+										color: rgb(112, 112, 112);
+										font-size: 15px;
+									}
 								}
 							}
 						}
@@ -130,12 +164,53 @@ $designWidth: 1920;
 							bottom: 0;
 							left: 0;
 							display: flex;
-							height: 80px;
+							height: 90px;
+							flex-direction: row;
 							width: 100%;
-							padding: 20px 0;
 							justify-content: space-between;
+							padding-top: 20px;
 							align-items: flex-end;
 							background: #9c1a1ad5;
+							.aboutMe-connection {
+								margin: 0 45px;
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
+								align-items: flex-start;
+								.github,
+								.wechat {
+									display: flex;
+									width: 100%;
+									justify-content: space-between;
+									align-items: center;
+									div {
+										display: flex;
+										justify-content: center;
+										align-items: flex-end;
+									}
+									svg {
+										height: 20px;
+										width: 20px;
+										color: white;
+									}
+									.qq {
+										margin-left: 30px;
+										fill: white;
+									}
+									a {
+										fill: rgb(175, 175, 175);
+										margin-left: 10px;
+									}
+
+									p {
+										fill: rgb(175, 175, 175);
+										margin-left: 10px;
+									}
+								}
+								.wechat {
+									margin-top: 5px;
+								}
+							}
 							.title1 {
 								display: flex;
 								justify-content: center;
@@ -169,11 +244,6 @@ $designWidth: 1920;
 						}
 					}
 				}
-			}
-			main.aboutMe-main-container {
-				display: flex;
-				justify-content: center;
-				align-items: flex-start;
 			}
 		}
 	}
