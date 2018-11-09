@@ -93,7 +93,38 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main class="jobExperience">
+      <div class="jobExperience-row">
+        <span class="jobExperience-duration">2017.3~2017.7</span>
+        <div class="dutyAndCompany">
+          <h2 class="duty">建筑师</h2>
+          <div class="companyAndJobDetail">
+            <span class="company">重庆孚思厅建筑规划设计有限公司</span>
+            <p class="jobDetail">建筑方案设计，投标方案，效果图绘制，建筑模型制作</p>
+          </div>
+        </div>
+      </div>
+      <div class="jobExperience-row">
+        <span class="jobExperience-duration">2017.7~2018.3</span>
+        <div class="dutyAndCompany">
+          <h2 class="duty">平面设计师</h2>
+          <div class="companyAndJobDetail">
+            <span class="company">重庆赛薇汀文化创意有限公司</span>
+            <p class="jobDetail">宣传图制作、排版、拍摄</p>
+          </div>
+        </div>
+      </div>
+      <div class="jobExperience-row">
+        <span class="jobExperience-duration">2018.3~</span>
+        <div class="dutyAndCompany">
+          <h2 class="duty">自学前端</h2>
+          <div class="companyAndJobDetail">
+            <span class="company">自学前端半年</span>
+            <p class="jobDetail">宣传图制作、排版、拍摄</p>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
 </template>
 <script>
@@ -105,3 +136,4 @@ $designWidth: 1920;
 	@return $px/$designWidth * 10 + rem;
 }
 </style>
+logo

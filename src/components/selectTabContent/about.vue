@@ -58,7 +58,6 @@ $designWidth: 1920;
 		height: 100%;
 		div.aboutMe-Container {
 			margin: 120px 120px 0 120px;
-
 			color: rgb(255, 255, 255);
 			display: flex;
 			width: 900px;
@@ -66,7 +65,7 @@ $designWidth: 1920;
 			height: 100%;
 			header.aboutMe-header {
 				display: flex;
-				height: 40%;
+				height: 50%;
 				position: relative;
 				div.aboutMe-header-text {
 					display: flex;
@@ -86,7 +85,7 @@ $designWidth: 1920;
 						}
 					}
 					div.aboutMe-board {
-						margin-top: 50px;
+						margin-top: 130px;
 						display: flex;
 						justify-content: flex-start;
 						flex: 1;
@@ -99,6 +98,7 @@ $designWidth: 1920;
 							display: flex;
 							flex-direction: column;
 							flex: 1;
+							background: rgb(33, 30, 30);
 							justify-content: flex-start;
 							align-items: flex-start;
 							padding: 50px 0 0 50px;
@@ -124,7 +124,7 @@ $designWidth: 1920;
 									.messageTitle {
 										margin-right: 80px;
 										p {
-											color: rgb(112, 112, 112);
+											color: #787878;
 										}
 									}
 								}
@@ -170,7 +170,7 @@ $designWidth: 1920;
 							justify-content: space-between;
 							padding-top: 20px;
 							align-items: flex-end;
-							background: #9c1a1ad5;
+							background: #b34242d5;
 							.aboutMe-connection {
 								margin: 0 45px;
 								display: flex;
@@ -236,10 +236,60 @@ $designWidth: 1920;
 									font-weight: 100;
 								}
 							}
-
 							.mainText {
 								flex: 1;
 								height: 100%;
+							}
+						}
+					}
+				}
+			}
+			.jobExperience {
+				margin-top: 80px;
+				width: 100%;
+				display: flex;
+				flex: 1;
+				flex-direction: column;
+				.jobExperience-row {
+					display: flex;
+					align-items: flex-start;
+					justify-content: flex-start;
+					width: 100%;
+					margin-bottom: 40px;
+					.jobExperience-duration {
+						width: 155px;
+						font-size: 20px;
+						text-align: left;
+						display: block;
+						background: #b34242;
+						padding: 5px 10px;
+						border-radius: 10px;
+					}
+					.dutyAndCompany {
+						display: flex;
+						margin-left: 23%;
+						position: relative;
+						.duty {
+							font-size: 30px;
+							font-weight: 100;
+							margin-right: 20px;
+							color: white;
+						}
+						.companyAndJobDetail {
+							position: absolute;
+							width: 350px;
+							left: 180px;
+							flex: 1;
+							display: flex;
+							flex-direction: column;
+							align-items: flex-start;
+							justify-content: flex-start;
+							p {
+								color: #787878;
+								text-align: left;
+							}
+							.company {
+								color: #dddddd;
 							}
 						}
 					}
