@@ -23,7 +23,19 @@
         </router-link>
       </div>
     </div>
-    <main></main>
+    <main>
+      <skills/>
+    </main>
   </div>
 </template>
+<script>
+import skills from "../TabContent/skills"
+export default {
+	components: {
+		skills
+	}
+}
+</script>
 
+<style lang="scss">
+</style>

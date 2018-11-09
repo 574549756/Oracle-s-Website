@@ -259,7 +259,7 @@ $designWidth: 1920;
 						font-size: 20px;
 						text-align: left;
 						display: block;
-						background: #b34242;
+						background: #c75454;
 						padding: 5px 10px;
 						border-radius: 10px;
 					}
