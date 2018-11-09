@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import "./assets/reset.scss"
 import resumeBoard from "./components/resumeBoard"
 import router from "./router/index"
 import topBar from "./components/topBar"

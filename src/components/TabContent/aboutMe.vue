@@ -8,9 +8,34 @@
           </svg>
           <p>ex.arc.zhang@gmail.com</p>
         </div>
-        <div class="aboutMe-header-h1">
-          <h1>张博涵</h1>
-          <h2>前端工程师</h2>
+        <div class="aboutMe-board">
+          <div class="photo"></div>
+          <div class="aboutMe-message">
+            <h1>张博涵</h1>
+            <div class="aboutMe-message-tltle2">
+              <div class="aboutMe-message-title2-site">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-site"></use>
+                </svg>
+                <p>重庆</p>
+              </div>
+              <h2>前端工程师</h2>
+            </div>
+            <div class="aboutMe-connection">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-site"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="aboutMe-header-h1">
+            <div class="title1">
+              <div class="sayHello">
+                <h1>WELCOME TO</h1>
+                <h1>MY PERSONAL PORTFOLIO</h1>
+              </div>
+            </div>
+            <div class="mainText"></div>
+          </div>
         </div>
       </div>
     </header>

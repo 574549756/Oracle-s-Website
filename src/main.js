@@ -6,7 +6,6 @@ import VueRouter from "vue-router"
 import App from "./App"
 import router from "./router"
 import "normalize.css"
-import "./assets/reset.scss"
 
 Vue.use(VueResource)
 Vue.use(VueRouter)
@@ -22,4 +21,3 @@ new Vue({
   components: { App },
   template: "<App/>"
 })
-

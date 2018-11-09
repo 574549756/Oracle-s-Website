@@ -66,7 +66,7 @@ $designWidth: 1920;
 			height: 100%;
 			header.aboutMe-header {
 				display: flex;
-				height: 35%;
+				height: 40%;
 				position: relative;
 				div.aboutMe-header-text {
 					display: flex;
@@ -81,24 +81,91 @@ $designWidth: 1920;
 							height: 40px;
 							width: 40px;
 						}
-					}
-					div.aboutMe-header-h1 {
-						position: absolute;
-						bottom: 0;
-						left: 0;
-						display: flex;
-						width: 70%;
-						padding: 20px 0;
-						align-items: flex-end;
-						background: #a3121979;
-						h1 {
-							margin: 0 10px 0 0;
-							font-size: 50px;
-							font-weight: 100;
+						p {
+							color: rgb(119, 119, 119);
 						}
-						h2 {
-							font-size: 30px;
-							font-weight: 100;
+					}
+					div.aboutMe-board {
+						display: flex;
+						justify-content: flex-start;
+						flex: 1;
+						div.photo {
+							width: 40%;
+							height: 100%;
+							background: white;
+						}
+						> .aboutMe-message {
+							margin-top: 50px;
+							margin-left: 50px;
+							display: flex;
+							h1 {
+								margin: 0;
+								font-family: "Courier New", Courier,
+									monospace;
+								font-weight: 100;
+								font-size: 50px;
+							}
+							h2 {
+								font-weight: 100;
+								font-size: 24px;
+								color: rgb(175, 175, 175);
+							}
+							.aboutMe-message-title2-site {
+								display: flex;
+								justify-content: flex-start;
+								align-items: center;
+								svg {
+									fill: rgb(112, 112, 112);
+									height: 20px;
+									width: 20px;
+								}
+								p {
+									color: rgb(112, 112, 112);
+									font-size: 15px;
+								}
+							}
+						}
+						div.aboutMe-header-h1 {
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							display: flex;
+							height: 80px;
+							width: 100%;
+							padding: 20px 0;
+							justify-content: space-between;
+							align-items: flex-end;
+							background: #9c1a1ad5;
+							.title1 {
+								display: flex;
+								justify-content: center;
+								width: 40%;
+								height: 100%;
+								.sayHello {
+									display: flex;
+									flex-direction: column;
+									align-items: flex-end;
+									h3 {
+										font-size: 20px;
+										margin: 0;
+										color: rgb(202, 202, 202);
+									}
+									p {
+										font-size: 18px;
+										color: white;
+									}
+								}
+								h1 {
+									margin: 0 0 0 12px;
+									font-size: 20px;
+									font-weight: 100;
+								}
+							}
+
+							.mainText {
+								flex: 1;
+								height: 100%;
+							}
 						}
 					}
 				}
