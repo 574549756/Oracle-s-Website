@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="Tab-inner-unfold">
-      <h2>00</h2>
-      <h1>About Me</h1>
+      <h2>02</h2>
+      <h1>Portfolio</h1>
     </div>
     <div class="clickBox">
       <router-link to="/" class="cross">
@@ -23,61 +23,43 @@
         </router-link>
       </div>
     </div>
+    <main class="inner-container">
+      <portfolio/>
+    </main>
   </div>
 </template>
+<script>
+import portfolio from "../TabContent/portfolio"
+export default {
+	components: {
+		portfolio
+	}
+}
+</script>
+
 <style lang="scss">
 .router {
-	position: relative;
-	.clickBox {
-		position: absolute;
-		right: 50px;
-		top: 50px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-end;
-		a.cross {
-			margin: 0 5px 40px 0;
-			display: block;
-			svg {
-				fill: #b1b0b0;
-				height: 20px;
-				width: 20px;
-			}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 100px;
+	main.inner-container {
+		display: block;
+		height: 100vh;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		&::-webkit-scrollbar {
+			display: none;
 		}
-		.preAndNext {
+		main.skills-container {
+			margin: 120px 120px 0 120px;
+			color: rgb(255, 255, 255);
 			display: flex;
-			div.pre {
-				svg {
-					height: 25px;
-					width: 25px;
-					fill: #4a4848;
-					transform: rotate(180deg);
-				}
-			}
-			a.pre {
-				svg {
-					height: 25px;
-					width: 25px;
-					fill: #b1b0b0;
-					transform: rotate(180deg);
-				}
-			}
-			a.next {
-				svg {
-					margin-left: 20px;
-					height: 25px;
-					width: 25px;
-					fill: #b1b0b0;
-				}
-			}
-			div.next {
-				svg {
-					margin-left: 20px;
-					height: 25px;
-					width: 25px;
-					fill: #4a4848;
-				}
+			width: 900px;
+			flex-direction: column;
+			.row1 {
+				width: 100%;
+				border: 1px solid red;
 			}
 		}
 	}

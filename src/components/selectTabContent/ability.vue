@@ -23,7 +23,7 @@
         </router-link>
       </div>
     </div>
-    <main>
+    <main class="inner-container">
       <skills/>
     </main>
   </div>
@@ -38,4 +38,30 @@ export default {
 </script>
 
 <style lang="scss">
+.router {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 100px;
+	main.inner-container {
+		display: block;
+		height: 100vh;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		main.skills-container {
+			margin: 120px 120px 0 120px;
+			color: rgb(255, 255, 255);
+			display: flex;
+			width: 900px;
+			flex-direction: column;
+			.row1 {
+				width: 100%;
+				border: 1px solid red;
+			}
+		}
+	}
+}
 </style>
