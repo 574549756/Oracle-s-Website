@@ -50,27 +50,26 @@ $designWidth: 1920;
 	align-items: center;
 	padding: 0 100px;
 	main.inner-container {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		flex-direction: column;
-		flex: 1;
-		height: 100%;
+		display: block;
+		height: 100vh;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+		}
 		div.aboutMe-Container {
 			margin: 120px 120px 0 120px;
 			color: rgb(255, 255, 255);
 			display: flex;
 			width: 900px;
 			flex-direction: column;
-			height: 100%;
 			header.aboutMe-header {
 				display: flex;
-				height: 50%;
-				position: relative;
+
 				div.aboutMe-header-text {
 					display: flex;
 					flex-direction: column;
-					flex: 1;
+					width: 100%;
 					.logo {
 						display: flex;
 						align-items: flex-end;
@@ -88,7 +87,8 @@ $designWidth: 1920;
 						margin-top: 130px;
 						display: flex;
 						justify-content: flex-start;
-						flex: 1;
+						height: 450px;
+						position: relative;
 						div.photo {
 							width: 40%;
 							height: 100%;
@@ -97,10 +97,10 @@ $designWidth: 1920;
 						.row-right {
 							display: flex;
 							flex-direction: column;
-							flex: 1;
 							background: rgb(33, 30, 30);
 							justify-content: flex-start;
 							align-items: flex-start;
+							flex: 1;
 							padding: 50px 0 0 50px;
 							main.aboutMe-main-container {
 								width: 100%;
@@ -245,11 +245,9 @@ $designWidth: 1920;
 				}
 			}
 			.jobExperience {
-				margin-top: 80px;
-				width: 100%;
-				display: flex;
-				flex: 1;
-				flex-direction: column;
+				margin-top: 130px;
+				display: block;
+				height: 100%;
 				.jobExperience-row {
 					display: flex;
 					align-items: flex-start;
@@ -268,18 +266,15 @@ $designWidth: 1920;
 					.dutyAndCompany {
 						display: flex;
 						margin-left: 23%;
-						position: relative;
 						.duty {
 							font-size: 30px;
 							font-weight: 100;
+							width: 160px;
+							text-align: left;
 							margin-right: 20px;
 							color: white;
 						}
 						.companyAndJobDetail {
-							position: absolute;
-							width: 350px;
-							left: 180px;
-							flex: 1;
 							display: flex;
 							flex-direction: column;
 							align-items: flex-start;

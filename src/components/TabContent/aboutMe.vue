@@ -120,7 +120,7 @@
           <h2 class="duty">自学前端</h2>
           <div class="companyAndJobDetail">
             <span class="company">自学前端半年</span>
-            <p class="jobDetail">宣传图制作、排版、拍摄</p>
+            <p class="jobDetail"></p>
           </div>
         </div>
       </div>
