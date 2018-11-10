@@ -21,6 +21,14 @@
       </svg>
     </div>
     <div id="myChart" :style="{width: '300px', height: '300px'}"></div>
+    <div class="row-rightSkills">
+      <div class="skillsJavaScript">
+        <el-progress :percentage="toNumber(75)" :width="50" type="circle" color="#b34242d5"></el-progress>
+        <svg class="javascript" aria-hidden="true">
+          <use xlink:href="#icon-socialjavascript"></use>
+        </svg>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -43,6 +51,9 @@ export default {
 		this.drawLine()
 	},
 	methods: {
+		toNumber(number) {
+			return number + 0
+		},
 		drawLine() {
 			// 基于准备好的dom，初始化echarts实例
 			let myChart = echarts.init(
@@ -153,11 +164,14 @@ export default {
 			}
 		}
 	}
-	.row-right-skills {
+	.row-rightSkills {
 		display: flex;
-		svg {
-			width: 20px;
-			height: 20px;
+		.skillsJavaScript {
+			svg {
+				fill: #f8f8f8;
+				height: 50px;
+				width: 50px;
+			}
 		}
 	}
 	.skillsIcon {

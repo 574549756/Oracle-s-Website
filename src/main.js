@@ -7,9 +7,12 @@ import App from "./App"
 import router from "./router"
 import "normalize.css"
 
+import ElementUI from "element-ui"
+import "element-ui/lib/theme-chalk/index.css"
+
 Vue.use(VueResource)
 Vue.use(VueRouter)
-
+Vue.use(ElementUI)
 Vue.config.productionTip = false
 import echarts from "echarts"
 Vue.prototype.$echarts = echarts
