@@ -1,6 +1,5 @@
 <template>
   <main class="skills-container">
-    <radar/>
     <div class="row1">11111</div>
     <div class="row2">
       <div class="row2Left">222</div>
@@ -10,10 +9,7 @@
 </template>
 
 <script>
-import radar from "./radar.vue"
 export default {
-	components: {
-		radar
-	}
+	components: {}
 }
 </script>

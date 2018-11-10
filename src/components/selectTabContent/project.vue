@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="Tab-inner-unfold">
-      <h2>02</h2>
+      <h2>01</h2>
       <h1>Portfolio</h1>
     </div>
     <div class="clickBox">
@@ -11,7 +11,7 @@
         </svg>
       </router-link>
       <div class="preAndNext">
-        <router-link to="/ability" class="pre">
+        <router-link to="/about" class="pre">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-next1"></use>
           </svg>

@@ -4,7 +4,7 @@ import app from "../App"
 import about from "../components/selectTabContent/about"
 import project from "../components/selectTabContent/project"
 import blog from "../components/selectTabContent/blog"
-import ability from "../components/selectTabContent/ability"
+import sketch from "../components/selectTabContent/sketch"
 import store from "../store/index"
 
 Vue.use(Router)
@@ -15,6 +15,11 @@ export default new Router({
       path: "/",
       name: "normal",
       component: undefined
+    },
+    {
+      path: "/ability",
+      name: "ability",
+      component: sketch
     },
     {
       path: "/about",
@@ -30,11 +35,6 @@ export default new Router({
       path: "/blog",
       name: "blog",
       component: blog
-    },
-    {
-      path: "/ability",
-      name: "ability",
-      component: ability
     }
   ]
 })

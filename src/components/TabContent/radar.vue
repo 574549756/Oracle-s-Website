@@ -1,6 +1,5 @@
 <template>
   <div class="skillsRadar">
-    <div class="header"></div>
     <div class="skillsIcon">
       <svg class="vue" aria-hidden="true">
         <use xlink:href="#icon-vuejs"></use>
@@ -8,10 +7,10 @@
       <svg class="node" aria-hidden="true">
         <use xlink:href="#icon-node-js"></use>
       </svg>
-      <svg class="jquery" aria-hidden="true">
+      <svg class="http" aria-hidden="true">
         <use xlink:href="#icon-http"></use>
       </svg>
-      <svg class="react" aria-hidden="true">
+      <svg class="cli" aria-hidden="true">
         <use xlink:href="#icon-minglinghang"></use>
       </svg>
       <svg class="html" aria-hidden="true">
@@ -21,7 +20,7 @@
         <use xlink:href="#icon-socialjavascript"></use>
       </svg>
     </div>
-    <div id="myChart" :style="{width: '200px', height: '200px'}"></div>
+    <div id="myChart" :style="{width: '300px', height: '300px'}"></div>
   </div>
 </template>
 
@@ -52,12 +51,11 @@ export default {
 			)
 			// 绘制图表
 			myChart.setOption({
-				backgroundColor: "#424244",
+				backgroundColor: "#222020",
 				title: {},
 				tooltip: {},
 				legend: {},
 				radar: {
-					// shape: 'circle',
 					name: {
 						textStyle: {
 							color: "rgba(238, 197, 102,0)"
@@ -70,33 +68,43 @@ export default {
 					splitLine: {
 						lineStyle: {
 							color: [
-								"rgba(238, 197, 102, 0.1)",
-								"rgba(238, 197, 102, 0.2)",
-								"rgba(238, 197, 102, 0.4)",
-								"rgba(238, 197, 102, 0.6)",
-								"rgba(238, 197, 102, 0.8)",
-								"rgba(238, 197, 102, 1)"
+								"rgba(102, 102, 102, 0.1)",
+								"rgba(102, 102, 102, 0.2)",
+								"rgba(102, 102, 102, 0.4)",
+								"rgba(102, 102, 102, 0.6)",
+								"rgba(102, 102, 102, 0.8)",
+								"rgba(102, 102, 102, 1)"
 							].reverse()
 						}
 					},
 					axisLine: {
 						lineStyle: {
-							color: "rgba(238, 197, 102, 0.5)"
+							color: "rgba(102, 102, 102, 0.5)"
 						}
 					},
 					indicator: [
-						{ name: "nodejs", max: 100 },
-						{ name: "react", max: 100 },
-						{ name: "vue", max: 100 },
-						{ name: "js", max: 100 },
-						{ name: "html", max: 100 },
-						{ name: "http", max: 100 }
+						{ name: "Node.js", max: 100 },
+						{ name: "CLI", max: 100 },
+						{ name: "VUE", max: 100 },
+						{ name: "JavaScript", max: 100 },
+						{ name: "HTML", max: 100 },
+						{ name: "HTTP", max: 100 }
 					]
 				},
 				series: [
 					{
 						type: "radar",
-						areaStyle: { normal: { opacity: 0.5 } },
+						symbol: "none",
+						lineStyle: {
+							width: 1,
+							opacity: 0.8
+						},
+						areaStyle: {
+							normal: {
+								opacity: 0.6,
+								color: "#b34242d5"
+							}
+						},
 						data: [
 							{
 								value: [30, 50, 60, 80, 85, 60],
@@ -106,20 +114,16 @@ export default {
 					}
 				]
 			})
-			console.log(myChart)
 		}
 	}
 }
 </script>
 
 <style lang="scss">
-#mychart {
-	width: 400px;
-	height: 400px;
-}
-
 .skillsRadar {
-	margin-top: 30px;
+	margin-top: 50px;
+	position: relative;
+	display: flex;
 	.header {
 		display: flex;
 		flex-direction: column;
@@ -149,44 +153,51 @@ export default {
 			}
 		}
 	}
-	.skillsIcon {
-		position: absolute;
-		z-index: 10;
-		height: 300px;
-		margin-left: 80px;
+	.row-right-skills {
+		display: flex;
 		svg {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.skillsIcon {
+		z-index: 10;
+		left: 50px;
+		top: 50px;
+		position: absolute;
+		svg {
+			position: absolute;
 			fill: #f3f3f5;
 			width: 26px;
 			height: 26px;
-			position: absolute;
-			background: #f56c6c;
+			background: #b34242d5;
 			border-radius: 13px;
-			border: 3px solid #f56c6c;
+			border: 2px solid #b34242d5;
 		}
 		.vue {
-			top: 132px;
-			left: -42px;
+			top: 150px;
+			left: -25px;
 		}
-		.react {
-			left: -42px;
-			top: 42px;
+		.cli {
+			left: -25px;
+			top: 25px;
 		}
 		.node {
-			left: 39px;
-			top: -3px;
+			left: 87px;
+			top: -40px;
 		}
-		.jquery {
+		.http {
 			fill: #f3f3f5;
-			left: 118px;
-			top: 43px;
+			left: 200px;
+			top: 25px;
 		}
 		.javascript {
-			left: 39px;
-			top: 178px;
+			left: 87px;
+			top: 215px;
 		}
 		.html {
-			left: 118px;
-			top: 132px;
+			left: 200px;
+			top: 150px;
 		}
 		.css {
 			left: 136px;

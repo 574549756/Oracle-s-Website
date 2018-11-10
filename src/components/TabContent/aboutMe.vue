@@ -93,6 +93,9 @@
         </div>
       </div>
     </header>
+    <main class="skills">
+      <radar/>
+    </main>
     <main class="jobExperience">
       <div class="jobExperience-row">
         <span class="jobExperience-duration">2017.3~2017.7</span>
@@ -128,7 +131,12 @@
   </div>
 </template>
 <script>
-export default {}
+import radar from "./radar"
+export default {
+	components: {
+		radar
+	}
+}
 </script>
 <style lang="scss">
 $designWidth: 1920;

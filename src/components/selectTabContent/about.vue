@@ -16,7 +16,7 @@
             <use xlink:href="#icon-next1"></use>
           </svg>
         </div>
-        <router-link to="/ability" class="next">
+        <router-link to="/project" class="next">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-next1"></use>
           </svg>
@@ -32,6 +32,7 @@
 <script>
 import aboutMe from "../TabContent/aboutMe"
 import clickBox from "./clickBox.scss"
+
 export default {
 	components: {
 		aboutMe
@@ -246,6 +247,7 @@ $designWidth: 1920;
 			}
 			.jobExperience {
 				margin-top: 130px;
+				margin-bottom: 130px;
 				display: block;
 				height: 100%;
 				.jobExperience-row {
@@ -259,9 +261,9 @@ $designWidth: 1920;
 						font-size: 20px;
 						text-align: left;
 						display: block;
-						background: #c75454;
+						border-left: 2px solid #c75454;
 						padding: 5px 10px;
-						border-radius: 10px;
+						box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 					}
 					.dutyAndCompany {
 						display: flex;
